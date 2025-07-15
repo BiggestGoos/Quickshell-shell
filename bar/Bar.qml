@@ -5,7 +5,7 @@ import QtQuick.Layouts
 
 import "root:/utils"
 
-import "widgets"
+import "components"
 
 Scope {
 
@@ -22,7 +22,7 @@ Scope {
 			screen: modelData
 
 			anchors {
-				bottom: true
+				top: true
 				left: true
 				right: true
 			}
@@ -48,11 +48,15 @@ Scope {
 
 				}
 
+				Tray {
+					Layout.fillHeight: true
+					Layout.alignment: Qt.AlightLeft
+				}
+
 				Clock {
 					Layout.fillHeight: true
-					//implicitWidth: 60
 					Layout.alignment: Qt.AlignRight
-				}
+				}	
 
 			}	
 
